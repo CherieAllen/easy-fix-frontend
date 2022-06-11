@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row, Card, Button } from "antd";
 import RepairCard from "./RepairCard";
 
-const{Meta} =Card;
 
 export default function RepairList() {
   const [repairs, setRepairs] = useState();

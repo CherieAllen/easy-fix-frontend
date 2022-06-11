@@ -1,15 +1,4 @@
-import{ useNavigate } from "react-router-dom"
-import React from 'react'
-import "../styles/RepairCard.css"
-
-
-
-export default function RepairCard({repair}){
-
-    let navigate=useNavigate()
-
-    return(
-        <div className='row'>
+<div className='row'>
         <div className='column'>  
         <div className='wrapper'>
         <div className='card'>
@@ -20,10 +9,7 @@ export default function RepairCard({repair}){
             </div>
             <button 
             className='card_button'
-            onClick={()=>{
-                
-                navigate(`/repairs/${repair?.id}`)
-            }}
+            onClick={()=>navigate(`/repairs/${repair?.id}`)}
             
             >Click Here</button>
 
@@ -32,5 +18,3 @@ export default function RepairCard({repair}){
         </div>
         </div>  
         </div>
-    )
-}
