@@ -1,19 +1,12 @@
 import { useEffect, useState } from "react";
 import SingleComment from "./SingleComment";
+import CommentForm from "./CommentForm";
 
 export default function Comments() {
   const [backendComments, setBackendComments] = useState([]);
-  console.log("backendComments", backendComments);
-  const rootComments = backendComments.filter(
-    (backendComment) => backendComment.parentId === null
-  );
+  
 
-//  const getReplies = commentId => {
-//      return backendComments.filter(backendComment => backendComment.parentId === commentId
-//  } 
-
-
-  useEffect(() => {
+    useEffect(() => {
     fetch("https://easy-fix-app-ca.web.app/comments")
       .then((response) => response.json())
       .then((data) => setBackendComments(data))
@@ -24,9 +17,11 @@ export default function Comments() {
     <>
       <div className="comments">
         <h2 className="comments-title"> Comment Section</h2>
+        <CommentForm />
         <div className="comments-container">
-          {rootComments.map((rootComment) => (
-            <SingleComment key={rootComment.id} comment={rootComment} />
+          {backendComments.map(backendComment => (
+            <SingleComment comment={backendComment} key={backendComment.id}   />
+       
           ))}
         </div>
       </div>
