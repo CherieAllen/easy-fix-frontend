@@ -1,6 +1,9 @@
 import{ useNavigate } from "react-router-dom"
 import React from 'react'
 import "../styles/repairCard.css"
+import { SignUp } from "./SignUp"
+
+
 
 
 
@@ -10,6 +13,13 @@ export default function RepairCard(){
     let navigate=useNavigate()
 
     return(
+        <>
+    <header className="Rp-header">
+        <h1>Easy Fix</h1>
+    <hero>
+
+     </hero>
+    </header>
         <section>
         <div className='row'>
         <div className='column'>  
@@ -82,8 +92,9 @@ export default function RepairCard(){
         </div>
         </div>  
         </div>
-
+            <SignUp/>
         </section>
+        </>
 
     )
     

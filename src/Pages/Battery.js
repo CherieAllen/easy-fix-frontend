@@ -7,6 +7,11 @@ export function Battery(){
     return(
         <>
         <Link to='/'> &lt; Back to Home</Link>
+        <header className="battery-header">
+            <h1> How to Change a Car Battery</h1>
+        </header>
+        
+
         <Comments/>
         </>
     )
