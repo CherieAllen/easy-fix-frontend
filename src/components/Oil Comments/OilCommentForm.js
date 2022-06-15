@@ -2,7 +2,7 @@ import { useState } from "react";
 import '../../styles/batteryComments.css'
 
 
-export default function CommentForm() {
+export default function OilCommentForm() {
   const [body, setBody] = useState("");
   const [username, setUsername] = useState("");
 
@@ -12,10 +12,11 @@ export default function CommentForm() {
   }
 
   const submitDisabled = body.length === 0 || username.length === 0;
+ 
 
   const handleOnClick = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5050/comments", {
+    fetch("http://localhost:5050/oilcomments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +24,7 @@ export default function CommentForm() {
       body: JSON.stringify(review),
     })
       .then(() => {
-        fetch("http://localhost:5050/comments")
+        fetch("http://localhost:5050/oilcomments")
         .then((response) => {
           response.json();
           window.location.reload();

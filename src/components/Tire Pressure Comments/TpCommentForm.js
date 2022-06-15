@@ -13,9 +13,10 @@ export default function CommentForm() {
 
   const submitDisabled = body.length === 0 || username.length === 0;
 
+
   const handleOnClick = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5050/comments", {
+    fetch("http://localhost:5050/tpcomments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +24,7 @@ export default function CommentForm() {
       body: JSON.stringify(review),
     })
       .then(() => {
-        fetch("http://localhost:5050/comments")
+        fetch("http://localhost:5050/tpcomments")
         .then((response) => {
           response.json();
           window.location.reload();
