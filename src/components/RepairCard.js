@@ -1,9 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import "../styles/repairCard.css";
-import Video from "../assets/video1.mp4";
-import hamburgerMenu from "../assets/whiteham.svg";
-import canvaImage from "../assets/canva2.png"
+import { Link } from "react-router-dom";
+
 
 // import { SignUp } from "./Login/Sign Up/SignUp"
 // import { Login } from "./Login/Sign Up/Login"
@@ -13,55 +12,7 @@ export default function RepairCard() {
 
   return (
     <>
-      <section className="hero">
-        <section className="showcase">
-          <header>
-            <h1 className="rp-logo">Easy Fix</h1>
-            <div className="toggle">
-              <img className="hamburger-menu"
-            src={hamburgerMenu}
-            alt="icon for a hamburger menu"
-              />
-              {/* <MenuToggle /> */}
-            </div>
-          </header>
-
-          <video
-            className="hero-video"
-            autoPlay
-            loop
-            muted
-            src={Video}
-            type="video/mp4"
-          />
-          <div className="overlay">
-            <div className="text">
-              <h2>The Help You Need</h2>
-              <h3>Is just a simple click away</h3>
-              <p>
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                quasi ea velit ipsum nemo voluptatibus dignissimos accusantium,
-                beatae, non doloribus doloremque dolore odio unde. Eligendi
-                beatae maiores a obcaecati ratione. Error reiciendis, voluptates
-                quisquam aperiam, incidunt, repudiandae quam porro distinctio
-                corrupti saepe eaque blanditiis doloribus rerum officiis maiores
-                aliquam exercitationem. Iusto vero alias provident fuga? Nostrum
-                beatae laboriosam eos quos.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* <div className="menu">
-        <ul>
-            <li>Home</li>
-            <li>Login/Sign Up</li>
-            <li>Pages</li>
-        </ul>
-    </div> */}
-      </section>
-      <section />
+    <Link to="/"> &lt; Back to Home</Link>
       <section className="card-container">
         <div className="row">
           <div className="column">

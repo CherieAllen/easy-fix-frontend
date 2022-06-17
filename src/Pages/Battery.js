@@ -9,7 +9,7 @@ import "../styles/page.css";
 export function Battery(){
     return(
         <>
-        <Link to='/'> &lt; Back to Home</Link>
+        <Link to='/repaircard'> &lt; Back </Link>
         <header className="page-header">
             <h1>How to Change a Car battery</h1>
         </header>
