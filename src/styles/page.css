@@ -1,0 +1,47 @@
+h1 {
+  padding-bottom: 100px;
+}
+.page-header {
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.page-p1-container {
+}
+
+.page-p1-image {
+  float: right;
+}
+.page-p1-text {
+}
+
+.image-1 {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+}
+
+.page-p2-container {
+  padding-top: 100px;
+}
+
+.page-p2-image {
+    float: left;
+  }
+.page-p2-text {
+}
+
+
+.image-2 {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+  padding-right: 15px;
+}
+
+.comments-section-container {
+    margin-top: 100px;
+    padding: 40px;
+
+}

@@ -1,8 +1,8 @@
 import {initializeApp} from 'firebase/app'
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth'
+import {getAuth, signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup} from 'firebase/auth'
 import{Button, Form,Input} from 'antd'
 import { useContext } from 'react'
-import { UserContext } from '../App'
+import { UserContext } from '../../../App'
 
 
 const firebaseConfig = {
@@ -15,21 +15,32 @@ const firebaseConfig = {
   };
   
 
-export function SignUp (){
+export function Login (){
     const{setUser} =useContext(UserContext)
-    const handleSignUp =({email,password}) =>{
+
+    const handleLogin =({email,password}) =>{
         const app =initializeApp(firebaseConfig);
         const auth =getAuth(app);
-        createUserWithEmailAndPassword(auth,email,password)
+        signInWithEmailAndPassword(auth,email,password)
             .then(res => setUser(res.user))
-            .then((''))
+            .then(setUser(''))
             .catch(console.error)
+
+    }
+
+    const handleGoogleLogin =() => {
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth,provider)
+        .then(res => setUser(res.user))
+        .catch(console.error)
 
     }
     return(
         <section>
         <Form 
-        onFinish={handleSignUp}
+        onFinish={handleLogin}
         labelCol={{ span: 8 }} wrapperCol={{ span: 16 }}>
 
         <Form.Item
@@ -53,31 +64,14 @@ export function SignUp (){
         ]}>
         <Input.Password/>
         </Form.Item>
-
-        <Form.Item
-        label="Confirm Password"
-        name="confirm"
-        dependencies={['password']}
-        hasFeedback
-        rules={[
-            {required:true,
-            message:'Please confirm you password'
-        },
-        ({getFieldValue}) => ({
-            validator(_,value){
-                if(!value || getFieldValue('password')=== value){
-                    return Promise.resolve();
-                }
-            }
-        })
-
-
-        ]} >
-        <Input.Password/>
-        </Form.Item>
         <Button type="primary" htmlType="submit">
-          Submit
+          Login
         </Button>
+        <Form.Item wrapperCol={{ span: 16, offset: 8 }}>
+          <Button onClick={handleGoogleLogin}  type="primary" htmltype="submit">
+            Google
+          </Button>
+        </Form.Item>
        
 
 
