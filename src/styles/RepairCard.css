@@ -84,7 +84,7 @@
   top: 100px;
   left: 0;
   width: 500px;
-  height: 500px;
+  height: 500v;
   margin-top: 60px;
 }
 
@@ -132,7 +132,7 @@
 }
 
 .card-container {
- padding:0 0 0 300px;
+ padding:0 0 0 500px;
 
 
 }
@@ -151,6 +151,7 @@
 }
 
 .text h3{
+  margin-top: 20px;
     font-size: 2em;
     line-height: 1em;
 }
@@ -158,6 +159,24 @@
 .text p{
     margin-top: 20px;
 }
+
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-left: 300px;
+}
+
+.img-canva{
+  
+}
+
+.comment-form-title{
+  color:white
+}
+
 
 
 

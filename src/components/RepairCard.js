@@ -3,6 +3,8 @@ import React from "react";
 import "../styles/repairCard.css";
 import Video from "../assets/video1.mp4";
 import hamburgerMenu from "../assets/whiteham.svg";
+import canvaImage from "../assets/canva2.png"
+
 // import { SignUp } from "./Login/Sign Up/SignUp"
 // import { Login } from "./Login/Sign Up/Login"
 
@@ -80,7 +82,7 @@ export default function RepairCard() {
                   className="card_button"
                   onClick={() => {
                     navigate("/repairs/oil");
-                  }} 
+                  }}
                 >
                   Click Here
                 </button>

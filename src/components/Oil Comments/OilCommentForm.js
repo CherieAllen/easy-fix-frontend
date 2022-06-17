@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../../styles/batteryComments.css'
+import '../../styles/comments.css'
 
 
 export default function OilCommentForm() {
@@ -34,8 +34,8 @@ export default function OilCommentForm() {
   };
 
   return (
-    <form>
-    <div className="comment-form-title">Username</div>
+    <form className="form-container">
+    <div className="comment-form-title">Name</div>
     <textarea
           
         className="comment-form-username"
