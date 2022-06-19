@@ -45,7 +45,16 @@ export default function Landing() {
                 beatae laboriosam eos quos.
               </p>
               <button
-                  className="landing-button"
+                  className="Login-button"
+                  onClick={() => {
+                    navigate("/login");
+                  }}> Login </button>
+                  <button
+                  className="Sign-up-button"
+                  onClick={() => {
+                    navigate("/signup");
+                  }}> Sign Up</button>
+                  <button
                   onClick={() => {
                     navigate("/repaircard");
                   }}> Click Here</button>

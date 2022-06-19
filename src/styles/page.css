@@ -1,10 +1,10 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 5px;
   padding:5px;
   font-family: "Poppins", sans-serif;
   
-}
+} */
 
 
 h1 {
@@ -53,4 +53,12 @@ h1 {
     margin-top: 100px;
     padding: 40px;
 
+}
+
+.loginForm{
+  border: 2rem;
+}
+ 
+.signUpForm{
+  border: 3rem;
 }

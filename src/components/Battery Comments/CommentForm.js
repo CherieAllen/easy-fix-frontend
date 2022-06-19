@@ -15,6 +15,7 @@ export default function CommentForm() {
 
   const handleOnClick = (e) => {
     e.preventDefault();
+    // TODO: replace localhost with deployed API point
     fetch("http://localhost:5050/comments", {
       method: "POST",
       headers: {

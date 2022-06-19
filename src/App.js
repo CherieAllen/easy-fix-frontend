@@ -6,6 +6,9 @@ import {Oil} from './Pages/Oil';
 import {Battery}  from './Pages/Battery';
 import {TirePressure }from './Pages/TirePressure'
 import Landing from './components/Landing'
+import {Login} from './components/Login'
+import { SignUp } from "./components/SignUp";
+// import '~antd/dist/antd.css';
 
 
 
@@ -22,6 +25,9 @@ function App() {
        <Route path="/repairs/battery" element={<Battery/>} />
        <Route path="/repaircard" element={<RepairCard />} />
        <Route path="/" element={<Landing/>} />
+       <Route path="/login" element={<Login/>} />
+       <Route path="/signup" element={<SignUp/>} />
+
       </Routes>
     </UserContext.Provider>
     </BrowserRouter>

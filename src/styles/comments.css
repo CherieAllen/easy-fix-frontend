@@ -35,7 +35,6 @@ h2{
 
   .form-container{
     background-color: black;
-    border-radius: 1em;
   }
 
   .form-button{
@@ -55,6 +54,8 @@ h2{
   .comment-container{
       position: relative;
       text-align: center;
+      padding:20px;
+   
   }
 
   .comment-top-left{
@@ -70,6 +71,8 @@ h2{
     color:white;
     
   }
+
+
 
   
   
