@@ -17,8 +17,23 @@ export default function Landing() {
         <section className="showcase">
           <header>
             <h1 className="rp-logo">Easy Fix</h1>
-            <div className="toggle">
-             </div>
+            <div className="buttons">
+            <button
+                  className="Login-button"
+                  onClick={() => {
+                    navigate("/login");
+                  }}> Login </button>
+                  <button
+                  className="Sign-up-button"
+                  onClick={() => {
+                    navigate("/signup");
+                  }}> Sign Up</button>
+                  <button
+                  onClick={() => {
+                    navigate("/repaircard");
+                  }}> Click Here</button>
+                  </div>
+            
           </header>
 
           <video
@@ -44,20 +59,6 @@ export default function Landing() {
                 aliquam exercitationem. Iusto vero alias provident fuga? Nostrum
                 beatae laboriosam eos quos.
               </p>
-              <button
-                  className="Login-button"
-                  onClick={() => {
-                    navigate("/login");
-                  }}> Login </button>
-                  <button
-                  className="Sign-up-button"
-                  onClick={() => {
-                    navigate("/signup");
-                  }}> Sign Up</button>
-                  <button
-                  onClick={() => {
-                    navigate("/repaircard");
-                  }}> Click Here</button>
             </div>
           </div>
         </section>
