@@ -9,6 +9,9 @@ import { Button, Form, Input } from "antd";
 import { useContext } from "react";
 import { UserContext } from "../App";
 import { useNavigate } from "react-router-dom";
+import '../styles/login-signin.css'
+import GoogleButton from "react-google-button";
+import { Link } from "react-router-dom";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAp1vyAdDQLmvwQnnLgyDqHTtv-HpemU8Q",
@@ -20,14 +23,15 @@ const firebaseConfig = {
 };
 
 export function Login() {
-  const { setUser } = useContext(UserContext);
+  const { user,setUser } = useContext(UserContext);
   let navigate = useNavigate();
+  
   const handleLogin = ({ email, password }) => {
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => setUser(res.user))
-      .then(navigate("/repaircard"))
+      .then(navigate( !user ? "/login" : "/repaircard"))
       .catch(console.error);
   };
 
@@ -39,8 +43,11 @@ export function Login() {
       .then((res) => setUser(res.user))
       .catch(console.error);
   };
+  
   return (
     <section>
+      <Link to="/"> &lt; Back</Link>
+      <h1 className="login-text">Login</h1>
       <Form
         className="loginForm"
         onFinish={handleLogin}
@@ -60,15 +67,15 @@ export function Login() {
         >
           <Input.Password />
         </Form.Item>
-        <Button type="primary" htmlType="submit">
+        <Button className="login-btn" type="primary" htmlType="submit">
           Login
         </Button>
         <Form.Item
         // wrapperCol={{ span: 16, offset: 8 }}
         >
-          <Button onClick={handleGoogleLogin} type="primary" htmltype="submit">
+          <GoogleButton className="google-login" onClick={handleGoogleLogin} type="primary" htmltype="submit">
             Google
-          </Button>
+          </GoogleButton>
         </Form.Item>
       </Form>
     </section>

@@ -28,10 +28,6 @@ export default function Landing() {
                   onClick={() => {
                     navigate("/signup");
                   }}> Sign Up</button>
-                  <button
-                  onClick={() => {
-                    navigate("/repaircard");
-                  }}> Click Here</button>
                   </div>
             
           </header>

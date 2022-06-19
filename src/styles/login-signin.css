@@ -1,0 +1,35 @@
+.loginForm{
+    margin: 90px;
+    padding-right: 300px;
+    padding-top: 100px;
+
+}
+
+.login-btn {
+   margin-left: 900px;
+}
+
+.google-login{
+    margin-left:900px;
+}
+
+.login-text{
+    font-family: poppins,sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -200px;
+    margin-top: 100px;
+}
+
+.signUpForm{
+    margin: 90px;
+    padding-right: 300px;
+    padding-top: 100px;
+
+}
+
+.signinbtn{
+    margin-left: 900px;
+}
+

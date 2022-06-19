@@ -23,7 +23,7 @@ function App() {
        <Route path="/repairs/tirepressure" element={<TirePressure/>} />
        <Route path="/repairs/oil" element={<Oil/>} />
        <Route path="/repairs/battery" element={<Battery/>} />
-       <Route path="/repaircard" element={<RepairCard />} />
+       <Route path="/repaircard" element={!user ? <Login/> : <RepairCard />} />
        <Route path="/" element={<Landing/>} />
        <Route path="/login" element={<Login/>} />
        <Route path="/signup" element={<SignUp/>} />
