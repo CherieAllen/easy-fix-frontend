@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import "../styles/repairCard.css";
-import Video from "../assets/video1.mp4";
+import Video from "../assets/video2.mp4";
 
 
 
@@ -46,14 +46,7 @@ export default function Landing() {
               <h3>Is just a simple click away</h3>
               <p>
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                quasi ea velit ipsum nemo voluptatibus dignissimos accusantium,
-                beatae, non doloribus doloremque dolore odio unde. Eligendi
-                beatae maiores a obcaecati ratione. Error reiciendis, voluptates
-                quisquam aperiam, incidunt, repudiandae quam porro distinctio
-                corrupti saepe eaque blanditiis doloribus rerum officiis maiores
-                aliquam exercitationem. Iusto vero alias provident fuga? Nostrum
-                beatae laboriosam eos quos.
+                Here at Easy Fix, we are here for you. Our mission is to provide valuable knowledge and resources about basic car repair. People should not have to rely solely on auto repair shops that can possibly take advantage of consumers' lack of knowledge on all things car related. We've been there. Lets help each other. To find more information, please sign up and login to obtain a wealth of resources for your DIY car repair needs. Let us help you.
               </p>
             </div>
           </div>

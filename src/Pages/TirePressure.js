@@ -2,8 +2,7 @@
 import { Link } from "react-router-dom";
 import TpComments from "../components/Tire Pressure Comments/TpComments";
 import "../styles/page.css";
-import tirePressureImage from "../assets/pexels-erik-mclean-5120127.jpg";
-import tireRidgesImage from "../assets/tireridges.jpg";
+
 
 export function TirePressure() {
   return (
@@ -16,34 +15,25 @@ export function TirePressure() {
         <div className="page-p1-image">
           <img
             className="image-1"
-            src={tirePressureImage}
+            src="https://www.familyhandyman.com/wp-content/uploads/2020/04/Step-Three-A-7by5.jpg?w=1200"
             alt="a tire that is appropriately filled with air"
           />
         </div>
         <div className="page-p1-text">
           <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
+          <p className="tag-line"> It is essential to know how to check you tire pressure in order to not get a surprise flat. We also included steps to how to fill your tire with --just in case. </p>
+         <p className="section-heading"> Materials</p>
+         <li>Tire pressure gauge</li>    
+         <li>Air Compressor</li>    
           </ul>
           <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
-          </ul>
-          <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
-          </ul>
-          <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
+          <p className="section-heading"> Step 1</p>
+          <p> Determine the approriate PSI level for you tires. Usually the average psi is between 32-35 for tires but you can find you reccomended value on the door jam of you vehicle.</p>
+          <p className="section-heading"> Step 2</p>
+          <p>Remove the valve cap off of the tire air valve.</p>
+          <p className="section-heading"> Step 3</p>
+          <p>Use tire pressure gauge and press onto the tire air valve. Press it hard. This creates a tight seal around the tire air valve so you don’t accidentally release air from the tire. You’ll hear a hissing sound if air is coming out. A small bar with numbered notches will pop out of the pencil gauge with the tire pressure reading.</p>
+
           </ul>
         </div>
       </div>
@@ -51,35 +41,22 @@ export function TirePressure() {
         <div className="page-p2-image">
           <img
             className="image-2"
-            src={tireRidgesImage}
+            src="https://www.familyhandyman.com/wp-content/uploads/2020/04/Step-Four-7by5.jpg?w=1200"
             alt="a tire that is appropriately filled with air"
           />
         </div>
         <div className="page-p2-text">
-          <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
+        <ul>
+          <p className="section-heading"> How to put air in the tire.</p>
+         <p className="section-heading"> Step 1</p>
+          <p>Use an Air Compressor, usually founded at a local gas station. Fill up the tire by pressing the air compressor nozzle onto the tire air valve in the same manner as the gauge — hard and straight-on to create a tight seal. Hold the nozzle onto the tire air valve for about 30 seconds to one minute, depending on how low the initial reading is. Repeat Step Three to get the new reading. Add or release air as needed to reach the recommended PSI.</p>
+            
           </ul>
           <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
+          <p className="section-heading"> Step 2</p>
+          <p>Repeat Steps Three and Four on the three remaining tires.</p>
           </ul>
-          <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
-          </ul>
-          <ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum
-            numquam provident facilis perspiciatis porro ab pariatur error
-            eligendi aspernatur dolore, repudiandae fugiat ratione accusamus
-            dolor quam deserunt tenetur totam.
-          </ul>
+          
         </div>
       </div>
       <div className="comments-section-container">
