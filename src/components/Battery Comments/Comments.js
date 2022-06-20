@@ -8,7 +8,7 @@ export default function Comments() {
   
 
     useEffect(() => {
-    fetch("http://localhost:5050/comments")
+    fetch("https://easy-fix-app-ca.web.app/comments")
       .then((response) => response.json())
       .then((data) => setBackendComments(data))
       .catch(console.error);

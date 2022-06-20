@@ -16,7 +16,7 @@ export default function CommentForm() {
 
   const handleOnClick = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5050/tpcomments", {
+    fetch("https://easy-fix-app-ca.web.app/tpcomments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export default function CommentForm() {
       body: JSON.stringify(review),
     })
       .then(() => {
-        fetch("http://localhost:5050/tpcomments")
+        fetch("https://easy-fix-app-ca.web.app/tpcomments")
         .then((response) => {
           response.json();
           window.location.reload();

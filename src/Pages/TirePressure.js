@@ -23,8 +23,10 @@ export function TirePressure() {
           <ul>
           <p className="tag-line"> It is essential to know how to check you tire pressure in order to not get a surprise flat. We also included steps to how to fill your tire with --just in case. </p>
          <p className="section-heading"> Materials</p>
+         <div className="materials-section">
          <li>Tire pressure gauge</li>    
-         <li>Air Compressor</li>    
+         <li>Air Compressor</li>
+         </div>    
           </ul>
           <ul>
           <p className="section-heading"> Step 1</p>

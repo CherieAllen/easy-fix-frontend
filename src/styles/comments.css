@@ -76,6 +76,10 @@ h2{
     
   }
 
+  .comment-img{
+    transform: scaleY(-1);
+  }
+
 
 
   

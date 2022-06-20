@@ -8,7 +8,7 @@ export default function TpComments() {
   
 
     useEffect(() => {
-    fetch("http://localhost:5050/tpcomments")
+    fetch("https://easy-fix-app-ca.web.app/tpcomments")
       .then((response) => response.json())
       .then((data) => setBackendComments(data))
       .catch(console.error);

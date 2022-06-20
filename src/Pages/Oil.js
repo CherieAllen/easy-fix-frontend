@@ -25,12 +25,14 @@ export function Oil(){
           <ul>
           <p className="tag-line">Changing you car oil is one of the easiest maintenance duties you can do for your car. It can safe you so much money if you learn how to do this task on your own.</p>
           <p className="section-heading"> Materials</p>
+          <div className='materials-section'>
          <li>Motor Oil</li>   
          <li>Oil filter</li>  
          <li>Oil pan</li>  
          <li>Wrench</li>  
          <li>Floor Jack or lift</li>  
          <li>Gloves</li>  
+         </div>
           </ul>
           <ul>
           <p className="section-heading"> Step 1</p>

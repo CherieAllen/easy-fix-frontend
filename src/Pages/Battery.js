@@ -23,9 +23,11 @@ export function Battery(){
           <ul>
         <p className="tag-line">Installing a car battery may sound intimidating but with the right materials you can do it at home by yourself.</p>
          <p className="section-heading"> Materials</p>
+         <div className="materials-section">
          <li>Replacement battery</li>   
          <li>Gloves</li>   
          <li>Wrench or Socket Set</li>   
+         </div>
           </ul>
           <ul>
             <p className="section-heading"> Step 1</p>
