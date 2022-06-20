@@ -16,7 +16,7 @@ export default function CommentForm() {
   const handleOnClick = (e) => {
     e.preventDefault();
     // TODO: replace localhost with deployed API point
-    fetch("https://easy-fix-app-ca.web.app/comments", {
+    fetch("http://localhost:5050/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export default function CommentForm() {
       body: JSON.stringify(review),
     })
       .then(() => {
-        fetch("https://easy-fix-app-ca.web.app/comments")
+        fetch("http://localhost:5050/comments")
         .then((response) => {
           response.json();
           window.location.reload();

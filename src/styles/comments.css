@@ -19,6 +19,10 @@ h2{
     color: rgb(59, 130, 246);
   }
 
+  .comments-title{
+    text-decoration: underline;
+  }
+
   .comment-form-username{
     margin-bottom: 20px;
 

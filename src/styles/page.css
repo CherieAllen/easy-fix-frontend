@@ -63,3 +63,13 @@ h1 {
 .signUpForm{
   border: 3rem;
 }
+
+.tag-line{
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.section-heading{
+  text-decoration: underline;
+  font-size: 15px;
+}
