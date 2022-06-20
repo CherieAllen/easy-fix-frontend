@@ -26,7 +26,7 @@ export function SignUp() {
     const auth = getAuth(app);
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => setUser(res.user))
-      // .then(navigate("/login"))
+      .then(navigate("/login"))
       .catch(console.error);
   };
 

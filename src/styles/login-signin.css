@@ -2,11 +2,13 @@
     margin: 90px;
     padding-right: 300px;
     padding-top: 100px;
+    position: fixed;
 
 }
 
 .login-btn {
    margin-left: 900px;
+   ;
 }
 
 .google-login{
@@ -32,4 +34,7 @@
 .signinbtn{
     margin-left: 900px;
 }
+
+
+    
 
