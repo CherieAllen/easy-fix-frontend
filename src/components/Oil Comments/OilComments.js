@@ -7,7 +7,7 @@ export default function OilComments() {
   
 
     useEffect(() => {
-    fetch("http://localhost:5050/oilcomments")
+    fetch("https://easy-fix-app-ca.web.app/oilcomments")
       .then((response) => response.json())
       .then((data) => setBackendComments(data))
       .catch(console.error);

@@ -16,7 +16,7 @@ export default function OilCommentForm() {
 
   const handleOnClick = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5050/oilcomments", {
+    fetch("https://easy-fix-app-ca.web.app/oilcomments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export default function OilCommentForm() {
       body: JSON.stringify(review),
     })
       .then(() => {
-        fetch("http://localhost:5050/oilcomments")
+        fetch("https://easy-fix-app-ca.web.app/oilcomments")
         .then((response) => {
           response.json();
           window.location.reload();
