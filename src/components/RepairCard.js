@@ -3,7 +3,6 @@ import React from "react";
 import "../styles/repairCard.css";
 import { Link } from "react-router-dom";
 
-
 // import { SignUp } from "./Login/Sign Up/SignUp"
 // import { Login } from "./Login/Sign Up/Login"
 
@@ -12,7 +11,7 @@ export default function RepairCard() {
 
   return (
     <>
-    <Link to="/"> &lt; Back to Home</Link>
+      <Link to="/"> &lt; Back to Home</Link>
       <section className="card-container">
         <div className="row">
           <div className="column">

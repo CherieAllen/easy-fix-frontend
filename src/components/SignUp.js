@@ -19,8 +19,7 @@ const firebaseConfig = {
 export function SignUp() {
   let navigate = useNavigate();
   const { setUser } = useContext(UserContext);
- 
-  
+
   const handleSignUp = ({ email, password }) => {
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);

@@ -7,8 +7,7 @@
   font-family: "Poppins", sans-serif;
 } */
 
-
-.hero{
+.hero {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 1rem;
@@ -37,12 +36,10 @@
   transform: scale(1.01);
 }
 
-.card-container{
-margin-right: 300px;
-display: flex;
-justify-content: space-between;
-
-
+.card-container {
+  margin-right: 300px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
@@ -97,14 +94,11 @@ justify-content: space-between;
   margin-top: 60px;
 }
 
-.text{
-    padding-left:40px
+.text {
+  padding-left: 40px;
 }
 
-
-
 .showcase {
-
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -113,7 +107,7 @@ justify-content: space-between;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  color:white
+  color: white;
 }
 
 .showcase header {
@@ -127,8 +121,8 @@ justify-content: space-between;
   align-items: center;
   justify-content: space-between;
 }
-.showcase hamburger-menu{
-    height:1px
+.showcase hamburger-menu {
+  height: 1px;
 }
 
 .toggle {
@@ -137,61 +131,57 @@ justify-content: space-between;
   height: 60 px;
   cursor: pointer;
   object-fit: 30px;
-
 }
 
 .card-container {
- padding:0 0 0 500px;
-
-
+  padding: 0 0 0 500px;
 }
 
-.rp-logo{
-    font-size: 40px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: rgba(0, 0, 0, 0.85);
-    font-weight: 500;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+.rp-logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
-.text h2{
-    margin-right: 100px;
-    font-size:3em ;
-    font-weight: 100px;
-    line-height: 1em;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: rgba(0, 0, 0, 0.85);
-    font-weight: 500;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+.text h2 {
+  margin-right: 100px;
+  font-size: 3em;
+  font-weight: 100px;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
-.text h3{
+.text h3 {
   margin-top: 20px;
-    font-size: 2em;
-    line-height: 1em;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: rgba(0, 0, 0, 0.85);
-    font-weight: 500;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
-.text p{
-    margin-top: 20px;
+.text p {
+  margin-top: 20px;
 }
 
-
-.img-container{
+.img-container {
   display: flex;
   justify-content: center;
   width: 100px;
@@ -199,26 +189,18 @@ justify-content: space-between;
   margin-left: 300px;
 }
 
-
-.Login-button{
+.Login-button {
   background-color: black;
-  font-size:20px;
+  font-size: 20px;
   /* margin-right:  20px; */
 }
 
-.Sign-up-button{
+.Sign-up-button {
   background-color: black;
-  font-size:20px;
+  font-size: 20px;
   /* margin-right:  20px; */
 }
 
-.buttons{
+.buttons {
   margin-bottom: auto;
 }
-
-
-
-
-
-
-

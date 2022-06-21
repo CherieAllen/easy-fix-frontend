@@ -6,8 +6,6 @@
   
 } */
 
-
-
 h1 {
   padding-bottom: 100px;
 }
@@ -37,11 +35,10 @@ h1 {
 }
 
 .page-p2-image {
-    float: left;
-  }
+  float: left;
+}
 .page-p2-text {
 }
-
 
 .image-2 {
   border-radius: 8px;
@@ -51,30 +48,28 @@ h1 {
 }
 
 .comments-section-container {
-    margin-top: 100px;
-    padding: 40px;
-
+  margin-top: 100px;
+  padding: 40px;
 }
 
-.loginForm{
+.loginForm {
   border: 2rem;
 }
- 
-.signUpForm{
+
+.signUpForm {
   border: 3rem;
 }
 
-.tag-line{
+.tag-line {
   font-weight: 200;
   font-size: 20px;
 }
 
-.section-heading{
+.section-heading {
   text-decoration: underline;
   font-size: 15px;
 }
 
-.materials-section{
-  margin-left:30px;
-
+.materials-section {
+  margin-left: 30px;
 }

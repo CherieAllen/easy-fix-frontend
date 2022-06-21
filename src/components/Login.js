@@ -9,7 +9,7 @@ import { Button, Form, Input } from "antd";
 import { useContext } from "react";
 import { UserContext } from "../App";
 import { useNavigate } from "react-router-dom";
-import '../styles/login-signin.css'
+import "../styles/login-signin.css";
 import GoogleButton from "react-google-button";
 import { Link } from "react-router-dom";
 
@@ -23,15 +23,15 @@ const firebaseConfig = {
 };
 
 export function Login() {
-  const { user,setUser } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   let navigate = useNavigate();
-  
+
   const handleLogin = ({ email, password }) => {
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => setUser(res.user))
-      .then(navigate( !user ? "/login" : "/repaircard"))
+      .then(navigate(!user ? "/login" : "/repaircard"))
       .catch(console.error);
   };
 
@@ -43,7 +43,7 @@ export function Login() {
       .then((res) => setUser(res.user))
       .catch(console.error);
   };
-  
+
   return (
     <section>
       <Link to="/"> &lt; Back</Link>
@@ -51,7 +51,8 @@ export function Login() {
       <Form
         className="loginForm"
         onFinish={handleLogin}
-        labelCol={{ span: 8 }} wrapperCol={{ span: 16 }}
+        labelCol={{ span: 8 }}
+        wrapperCol={{ span: 16 }}
       >
         <Form.Item
           label="Email"
@@ -70,13 +71,18 @@ export function Login() {
         <Button className="login-btn" type="primary" htmlType="submit">
           Login
         </Button>
-        <Form.Item
+        {/* <Form.Item
         // wrapperCol={{ span: 16, offset: 8 }}
         >
-          <GoogleButton className="google-login" onClick={handleGoogleLogin} type="primary" htmltype="submit">
+          <GoogleButton
+            className="google-login"
+            onClick={handleGoogleLogin}
+            type="primary"
+            htmltype="submit"
+          >
             Google
           </GoogleButton>
-        </Form.Item>
+        </Form.Item> */}
       </Form>
     </section>
   );
